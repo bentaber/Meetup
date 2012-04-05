@@ -23,19 +23,20 @@
 		el.animate({
 			height: '200px',
 			width: '200px',
-		}, 250, 'swing', cb)
+		}, 500, 'swing', cb)
 	}
 
 	function little(el, cb) {
+		if (cb) cb();
+
 		el.animate({
 			height: '48px',
 			width: '48px'
-		}, 250, function() {
+		}, 500, 'swing', function() {
 			el.css({ zIndex: 0 })
 			var parent = el.parent();
 			parent.append(el);
 
-			if (cb) cb();
 		});
 	}
 
