@@ -13,45 +13,43 @@ body {
 }
 
 #angrierLibContent {
-	margin: 20px;
+	margin: 100px;
+	position: relative;
 }
 
 #angrierLibContent li {
 	clear: both;
-	border: 1px solid #000;
-	height: 50px;
 	border-radius: 5px;
 	margin: 10px;
-	position: relative;
+	position: absolute;
+	top: 0;
 }
 
 #angrierLibContent li.selected {
-	height: 250px;
-	background: #333;
-	border-color: #c0c0c0;
 }
 
 #angrierLibContent h2 {
-	float: left;
-	width: 150px;
+	width: 200px;
 	line-height: 48px;
 	white-space: nowrap;
-	padding-left: 20px;
+	position: absolute;
+	background: #666;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+	text-align: center;
 }
 
 #angrierLibContent li.selected h2 {
-	line-height: 250px;
-	font-size: 22px;
+	display: block;
+	z-index: 2;
 }
 
 #angrierLibContent img {
 	height: 48px;
 	width: 48px;
-	position: relative;
-	float: left;
-	/*top: 20px;*/
+	position: absolute;
 }
 
 #angrierLibContent li.selected img {
-	top: 80px;
 }
